@@ -1,4 +1,5 @@
 # Neural Networks Project WiSe2020/21
+This is a project in which we want to train a model to do automatic POS tagging, based on sample data.
 
 ## Table of Contents
 * sample.info: contains information about the sample data set
