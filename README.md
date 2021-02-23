@@ -3,7 +3,7 @@
 ## Table of Contents
 * sample.info: contains information about the sample data set
 * data_preprocessing.py: python program for the preprocessing
-* 
+* environment.yaml: .yaml file to build the environment
 
 ## General Information
 
