@@ -1,6 +1,9 @@
 # Neural Networks Project WiSe2020/21
 
 ## Table of Contents
+* sample.info: contains information about the sample data set
+* data_preprocessing.py: python program for the preprocessing
+* 
 
 ## General Information
 
