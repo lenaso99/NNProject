@@ -2,9 +2,9 @@
 This is a project in which we want to train a model to do automatic POS tagging, based on sample data.
 
 ## Table of Contents
-* sample.info: contains information about the sample data set
-* data_preprocessing.py: python program for the preprocessing
-* environment.yaml: .yaml file to build the environment
+* <i>sample.info</i>: contains information about the sample data set
+* <i>data_preprocessing.py</i>: python program for the preprocessing, creating a `.info` and a `.tsv` file 
+* <i>environment.yaml</i>: .yaml file to build the environment
 
 ## General Information
 
