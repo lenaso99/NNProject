@@ -16,4 +16,5 @@ Press enter. Once the program is finished, you will find the extracted POS tags 
 
 ## Splitting the data into training, testing, and validating data
 Done using the file `to_df.py`. After opening the command line, move to the directory containing the program `to_df.py`. Into the command line, enter `python to_df.py --tsv=<Path_To_TSV_File> --output_dir=<Path_To_Output_File>`. The program defaults to a `.tsv` file called `sequences.tsv` and the working directory as an output directory. <br>
-Press enter. Once the program is finished, you will find the training, testing and validating data in the specified output directory.
+Press enter. Once the program is finished, you will find the training, testing and validating data in the specified output directory. <br>
+The data is split into roughly 70% training, 15% testing and 15% validating data, while also ensuring that no sentences are split up between them.
