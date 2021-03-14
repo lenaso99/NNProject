@@ -42,7 +42,7 @@ def get_df(tsv, length):
     return(df)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Input the path to a .tsv file and an output directory for the .info file.")
+    parser = argparse.ArgumentParser(description="Input the path to a .tsv file and an output directory for the output files.")
     parser.add_argument("--tsv", dest="tsv", type=str, default="sequences.tsv")
     parser.add_argument("--output_dir", dest="output_dir", type=str, default=".")
 
