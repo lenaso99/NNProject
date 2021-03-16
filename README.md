@@ -28,8 +28,10 @@ The data is split into roughly 70% training, 15% testing and 15% validating data
 * `POS`: this list contains the POS-tag of each word
 
 ## Loading the data
+Done using the file `loading_script.py`. This is code that does not need to be executed manually, but will be used by the following steps. The function `_split_generators` loads the training, testing and validating data, and the function `_generate_examples` yields examples from these for further use. 
 
 ## Creating embeddings
+The function `load_datasets(dataset)` loads the previously created training, testing and validating data by accessing the defined functions in `loading_script.py`. 
 
 ## Classifying algorithms
 ### CNN
