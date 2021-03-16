@@ -8,6 +8,7 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>environment.yaml</i>: `.yaml` file to build the environment
 
 ## General Information
+This project creates a classifier with Bert-embeddings. We compare the performance of the algorithms CNN and LSTM.
 
 ## Data Preprocessing
 Done using the file `data_preprocessing.py`. After opening the command line, move to the directory containing the program `data_preprocessing.py`. Into the command line, enter
