@@ -31,8 +31,12 @@ The data is split into roughly 70% training, 15% testing and 15% validating data
 Done using the file `loading_script.py`. This is code that does not need to be executed manually, but will be used by the following steps. The function `_split_generators` loads the training, testing and validating data, and the function `_generate_examples` yields examples from these for further use. 
 
 ## Creating embeddings
-The function `load_datasets(dataset)` loads the previously created training, testing and validating data by accessing the defined functions in `loading_script.py`. 
+Done using `create_embeddings.py`. The function `load_datasets(dataset)` loads the previously created training, testing and validating data by accessing the defined functions in `loading_script.py`. The function `enconding_labels` creates a dictionary with POS tags and assigns them a random index. The function `encode_dataset` tokenizes and creates embeddings from tokenized data using the pre-trained BERT model. <br>
+Simply run this program by entering `python create_embeddings.py` into the command line. Once complete, this will later be automatically executed in `task2.py`.
 
 ## Classifying algorithms
+Done using `classifiers.py`. This code is still unfinished, and will later be automatically executed in `task2.py`.
 ### CNN
+In `classifiers.py`, the class `CNN` is responsible for the CNN classifying algorithm.
 ### LSTM
+In `classifiers.py`, the class `LSTM` is responsible for the LSTM classifying algorithm.
