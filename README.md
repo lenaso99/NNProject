@@ -12,7 +12,7 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>task2.py</i>: python program that will unify all above programs
 
 ## General Information
-This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM.
+This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM. Currently, the code is divided into multiple sub-programs, as mentioned below. Later, however, it is planned that everything will be unified in `task2.py`, so that the user only has to run one line of code to execute the whole project.
 
 ## Data Preprocessing
 Done using the file `data_preprocessing.py`. After opening the command line, move to the directory containing the program `data_preprocessing.py`. Into the command line, enter
