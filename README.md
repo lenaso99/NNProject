@@ -3,9 +3,13 @@ This is a project in which we want to train a model to do automatic POS tagging,
 
 ## Table of Contents
 * <i>sample.info</i>: contains information about the sample data set
+* <i>environment.yaml</i>: `.yaml` file to build the environment
 * <i>data_preprocessing.py</i>: python program for the preprocessing, creating a `.info` and a `.tsv` file 
 * <i>to_df.py</i>: python program splitting a `.tsv` file - for example, the one created by `data_preprocessing.py` into training, testing, and validating data
-* <i>environment.yaml</i>: `.yaml` file to build the environment
+* <i>loading_script.py</i>: python program for loading the training, testing and validating data
+* <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, tetsing and validating data using the BERT model
+* <i>classifiers.py</i>: python program for the two classifiers CNN and LSTM
+* <i>task2.py</i>: python program that will unify all above programs
 
 ## General Information
 This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM.
@@ -22,3 +26,11 @@ The data is split into roughly 70% training, 15% testing and 15% validating data
 * `position`: these are the indices for each word of the sentence. For example, a sentence with 3 words will have the following list in `position`: `[0, 1, 2]`
 * `word`: this list contains each word of the sentence
 * `POS`: this list contains the POS-tag of each word
+
+## Loading the data
+
+## Creating embeddings
+
+## Classifying algorithms
+### CNN
+### LSTM
