@@ -7,9 +7,9 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>data_preprocessing.py</i>: python program for the preprocessing, creating a `.info` and a `.tsv` file 
 * <i>to_df.py</i>: python program splitting a `.tsv` file - for example, the one created by `data_preprocessing.py` into training, testing, and validating data
 * <i>loading_script.py</i>: python program for loading the training, testing and validating data
-* <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, tetsing and validating data using the BERT model
+* <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, testing and validating data using the BERT model
 * <i>classifiers.py</i>: python program for the two classifiers CNN and LSTM
-* <i>task2.py</i>: python program that will unify all above programs
+* <i>task2.py</i>: python program that trains and tests the classifiers from `classifiers.py`
 
 ## General Information
 This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM. Currently, the code is divided into multiple sub-programs, as mentioned below. Later, however, it is planned that everything will be unified in `task2.py`, so that the user only has to run one line of code to execute the whole project.
@@ -31,12 +31,12 @@ The data is split into roughly 70% training, 15% testing and 15% validating data
 Done using the file `loading_script.py`. This is code that does not need to be executed manually, but will be used by the following steps. The function `_split_generators` loads the training, testing and validating data, and the function `_generate_examples` yields examples from these for further use. 
 
 ## Creating embeddings
-Done using `create_embeddings.py`. The function `load_datasets(dataset)` loads the previously created training, testing and validating data by accessing the defined functions in `loading_script.py`. The function `enconding_labels` creates a dictionary with POS tags and assigns them a random index. The function `encode_dataset` tokenizes and creates embeddings from tokenized data using the pre-trained BERT model. <br>
+Done using `create_embeddings.py`. The function `load_datasets(dataset)` loads the previously created training, testing and validating data by accessing the defined functions in `loading_script.py`. The function `encode_dataset` tokenizes and creates embeddings from tokenized data using the pre-trained BERT model. <br>
 Simply run this program by entering `python create_embeddings.py` into the command line. Once complete, this will later be automatically executed in `task2.py`.
 
 ## Classifying algorithms
 Done using `classifiers.py`. This code is still unfinished, and will later be automatically executed in `task2.py`.
 ### CNN
-In `classifiers.py`, the class `CNN` is responsible for the CNN classifying algorithm.
+In `classifiers.py`, the class `TextClassifier` is responsible for the CNN classifying algorithm.
 ### LSTM
 In `classifiers.py`, the class `LSTM` is responsible for the LSTM classifying algorithm.
