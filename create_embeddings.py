@@ -1,16 +1,5 @@
 from transformers import BertTokenizerFast, BertModel
 from datasets import load_dataset
-import argparse
-
-
-def encoding_labels(data):
-    possible = set(data)
-    possible_labels = list(possible)
-    label_dict = {}
-    for index, possible_label in enumerate(possible_labels):
-        label_dict[possible_label] = index
-
-    return label_dict
 
 
 def encode_dataset(train, test):
@@ -31,8 +20,9 @@ def encode_dataset(train, test):
 
 
 if __name__ == '__main__':
-    
+
     dataset = load_dataset("loading_script.py")
+    out = encode_dataset(dataset["train"]["word"], dataset["test"]["word"])
 
     label = encoding_labels(dataset["train"]["tag"])
     out = encode_dataset(dataset["train"]["word"], dataset["test"]["word"])
