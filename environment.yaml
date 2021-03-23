@@ -8,3 +8,11 @@
   - pip
   - pandas
   - argparse
+  - torch
+  - torch.nn
+  - math
+  - transformers
+  - torch.optim
+  - datasets
+  - os
+  - csv
