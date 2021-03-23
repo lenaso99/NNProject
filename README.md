@@ -9,7 +9,7 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>loading_script.py</i>: python program for loading the training, testing and validating data
 * <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, testing and validating data using the BERT model
 * <i>classifiers.py</i>: python program for the two classifiers CNN and LSTM
-* <i>task2.py</i>: python program that trains and tests the classifiers from `classifiers.py`
+* <i>task2.py</i>: python program that will combine all pieces of code, train and test the classifiers from `classifiers.py`
 
 ## General Information
 This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM. Currently, the code is divided into multiple sub-programs, as mentioned below. Later, however, it is planned that everything will be unified in `task2.py`, so that the user only has to run one line of code to execute the whole project.
@@ -35,8 +35,12 @@ Done using `create_embeddings.py`. The function `load_datasets(dataset)` loads t
 Simply run this program by entering `python create_embeddings.py` into the command line. Once complete, this will later be automatically executed in `task2.py`.
 
 ## Classifying algorithms
-Done using `classifiers.py`. This code is still unfinished, and will later be automatically executed in `task2.py`.
+Done using `classifiers.py`. This code is still unfinished and does not work at this point, and the goal is that it will be automatically executed in `task2.py`.
 ### CNN
 In `classifiers.py`, the class `TextClassifier` is responsible for the CNN classifying algorithm.
 ### LSTM
 In `classifiers.py`, the class `LSTM` is responsible for the LSTM classifying algorithm.
+
+## Executing the algorithms
+As of now, the each part of the code needs to be executed seperately, as `task2.py` is still unfinished. Read previous sections on how to execute each part. <br>
+The goal is for `task2.py` to combine all parts of the code, such that only one command needs to be executed from the command line.
