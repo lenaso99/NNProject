@@ -9,7 +9,7 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>loading_script.py</i>: python program for loading the training, testing and validating data
 * <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, testing and validating data using the BERT model
 * <i>classifiers.py</i>: python program for the two classifiers CNN and LSTM
-* <i>task2.py</i>: python program that will combine all pieces of code, train and test the classifiers from `classifiers.py`
+* <i>task2.py</i>: python program that will combine all pieces of code, train, test and evaluate the classifiers from `classifiers.py`
 
 ## General Information
 This project creates a classifier by using BERT-embeddings. We compare the performance of the two classifying algorithms CNN and LSTM. Currently, the code is divided into multiple sub-programs, as mentioned below. Later, however, it is planned that everything will be unified in `task2.py`, so that the user only has to run one line of code to execute the whole project.
