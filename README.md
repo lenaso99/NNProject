@@ -5,7 +5,7 @@ This is a project in which we want to train a model to do automatic POS tagging,
 * <i>sample.info</i>: contains information about the sample data set
 * <i>environment.yaml</i>: `.yaml` file to build the environment
 * <i>data_preprocessing.py</i>: python program for the preprocessing, creating a `.info` and a `.tsv` file 
-* <i>to_df.py</i>: python program splitting a `.tsv` file - for example, the one created by `data_preprocessing.py` into training, testing, and validating data
+* <i>to_df.py</i>: python program splitting a `.tsv` file - for example, the one created by `data_preprocessing.py` - into training, testing, and validating data
 * <i>loading_script.py</i>: python program for loading the training, testing and validating data
 * <i>create_embeddings.py</i>: python program for tokenization and creating embeddings from the training, testing and validating data using the BERT model
 * <i>classifiers.py</i>: python program for the two classifiers CNN and LSTM
