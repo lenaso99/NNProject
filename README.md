@@ -16,8 +16,8 @@ This project creates a classifier by using BERT-embeddings. We compare the perfo
 
 ## Data Preprocessing
 Done using the file `data_preprocessing.py`. After opening the command line, move to the directory containing the program `data_preprocessing.py`. Into the command line, enter
-`python data_preprocessing.py --conll=<Path_To_Conll_File> --output_dir=<Path_To_Output_File>`. <br>
-Press enter. Once the program is finished, you will find the extracted POS tags in the specified output file.
+`python data_preprocessing.py --conll=<Path_To_Conll_File> --output_dir=<Path_To_Output_Directory>`. <br>
+Press enter. Once the program is finished, you will find the extracted POS tags (as a `.tsv` file) and information (as a `.info` file) about the data set in the specified output directory.
 
 ## Splitting the data into training, testing, and validating data
 Done using the file `to_df.py`. After opening the command line, move to the directory containing the program `to_df.py`. Into the command line, enter `python to_df.py --tsv=<Path_To_TSV_File> --output_dir=<Path_To_Output_File>`. The program defaults to a `.tsv` file called `sequences.tsv` and the working directory as an output directory. <br>
@@ -42,5 +42,5 @@ In `classifiers.py`, the class `TextClassifier` is responsible for the CNN class
 In `classifiers.py`, the class `LSTM` is responsible for the LSTM classifying algorithm.
 
 ## Executing the algorithms
-As of now, the each part of the code needs to be executed seperately, as `task2.py` is still unfinished. Read previous sections on how to execute each part. <br>
+As of now, each part of the code needs to be executed seperately, as `task2.py` is still unfinished. Read previous sections on how to execute each part. <br>
 The goal is for `task2.py` to combine all parts of the code, such that only one command needs to be executed from the command line.
